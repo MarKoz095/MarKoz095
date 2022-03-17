@@ -1,0 +1,12 @@
+//Napisz metodę, która jako argument przyjmuje liczbę i zwraca go podniesionego do 3 potęgi,
+
+public class Metody {
+    public static void main(String[] args) {
+        System.out.println(liczba(5));
+
+    }
+    public static int liczba (int a){
+        return a*a*a;
+    }
+
+}
