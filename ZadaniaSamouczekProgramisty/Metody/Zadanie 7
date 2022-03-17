@@ -1,0 +1,14 @@
+//Napisz metodę, która jako argument przyjmuje liczbę i zwraca jej pierwiastek kwadratowy
+
+import static java.lang.Math.sqrt;
+
+public class Metody {
+    public static void main(String[] args) {
+        System.out.println(liczba(16));
+
+    }
+    public static double liczba (double a){
+        return sqrt(a);
+    }
+
+}
