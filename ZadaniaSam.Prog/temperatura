@@ -1,0 +1,18 @@
+//Napisz metodę, która sprawdzi czy temperatura przekazana jako argument jest dodatnia
+
+public class Temp {
+
+    public static void main(String[] args) {
+        System.out.println(isPositive(10));
+        System.out.println(isPositive(-10));
+
+    }
+
+    private static boolean isPositive(int temperature){
+        if(temperature>0)
+            return true;
+        else
+            return false;
+
+    }
+}
