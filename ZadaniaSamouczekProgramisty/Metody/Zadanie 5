@@ -1,0 +1,16 @@
+//Napisz metodę, która jako argument przyjmuje liczbę i zwraca true jeśli liczba jest podzielna przez 3 i przez 5,
+
+public class Metody {
+    public static void main(String[] args) {
+        System.out.println(liczba(3));
+        System.out.println(liczba(5));
+        System.out.println(liczba(15));
+
+
+    }
+    public static boolean liczba(int a){
+        return a % 3 == 0 && a % 5 == 0;
+
+    }
+
+}
