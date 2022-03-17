@@ -1,0 +1,16 @@
+//Napisz metodę, która jako argument przyjmuje 2 liczby i wypisuje ich sumę, różnicę i iloczyn
+
+public class Metody {
+    public static void main(String[] args) {
+        liczby(5,10);
+        
+
+    }
+    public static void liczby(double a, double b){
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*b);
+
+    }
+
+}
