@@ -1,4 +1,4 @@
-//Napisz metodę, która sprawdzi czy temperatura przekazana jako argument jest dodatnia
+//Napisz metodę, która sprawdzi czy temperatura przekazana jako argument jest dodatnia.
 
 public class Temperatura {
 
