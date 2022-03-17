@@ -1,0 +1,15 @@
+//Napisz metodę, która zwróci Twój aktualny wiek i imie
+public class Metody {
+    public static void main(String[] args) {
+        System.out.print("Wiek: " + wiek() + " lat" + "\nImie: "+ imie());
+
+    }
+     public static int wiek(){
+        return 26;
+
+    }
+    public static String imie(){
+        return "Junior dev";
+
+    }
+}
