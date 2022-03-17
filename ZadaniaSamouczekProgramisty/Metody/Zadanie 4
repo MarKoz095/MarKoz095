@@ -1,0 +1,16 @@
+//Napisz metodę, która jako argument przyjmuje liczbę i zwraca true jeśli liczba jest parzysta,
+
+public class Metody {
+    public static void main(String[] args) {
+        System.out.println(parzysta(10));
+        System.out.println(parzysta(3));
+
+    }
+    public static boolean parzysta(int a){
+        if(a%2 == 0)
+            return true;
+        else
+            return false;
+    }
+
+}
