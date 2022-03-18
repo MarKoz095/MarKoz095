@@ -1,0 +1,32 @@
+/* Utwórz klasę o nazwie MyNumber, której jedyny konstruktor przyjmuje liczbę. Klasa powinna mieć następujące metody:
+    MyNumber isOdd() – true jeśli atrybut jest nieparzysty,
+    MyNumber isEven() – true jeśli atrybut jest parzysty,
+    MyNumber sqrt() – pierwiastek z atrybutu,
+    MyNumber pow(MyNumber x) – atrybut podniesiony do potęgi x (przydatnej metody poszukaj w javadoc do klasy Math),
+
+.*/
+
+
+public class MyNumber {
+    private int a;
+
+    public MyNumber(int a) {
+        this.a = a;
+    }
+
+    public boolean isOdd(){
+        return a%2 != 0;
+    }
+    public boolean isEven(){
+        return a%2 == 0;
+    }
+    public double sqrt(){
+        return Math.sqrt(a);
+    }
+    public double pow(){
+        return Math.pow(a,a);
+    }
+
+}
+
+
