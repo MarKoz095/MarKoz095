@@ -1,0 +1,24 @@
+/* Utwórz klasę reprezentującą prostokąt, musi posiadać atrybuty długość i szerokość.
+Klasa powinna posiadać metody obliczające pole, obwód i długość przekątnej.*/
+
+
+public class Prostokat {
+    
+    private final int dlugosc;
+    private final int szerokosc;
+
+    public Prostokat(int dlugosc, int szerokosc) {
+        this.dlugosc = dlugosc;
+        this.szerokosc = szerokosc;
+    }
+
+    public int pole(){
+        return dlugosc*szerokosc;
+    }
+    public int obwod(){
+        return dlugosc+dlugosc+szerokosc+szerokosc;
+    }
+    public double przekontna(){
+        return Math.sqrt(dlugosc * dlugosc + szerokosc * szerokosc);
+    }
+}
