@@ -1,0 +1,15 @@
+/* Napisz metodę, która zwróci tablicę String[] zawierającą pierwsze 5 liter alfabetu
+
+.*/
+import java.util.Arrays;
+
+public class Tablice {
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(tablica()));
+
+    }
+
+    public static String[] tablica(){
+        return new String[]{"a", "b", "c", "d", "e"};
+    }
+}
