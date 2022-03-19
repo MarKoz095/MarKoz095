@@ -1,0 +1,22 @@
+/* Napisz program, który pobierze od użytkownika liczbę całkowitą, a następnie wyświetli jej binarną reprezentację na ekranie.
+. */
+
+import java.util.Scanner;
+
+public class Zadanie {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj liczbę: ");
+        System.out.println("Liczba binarna to: " + intToBinary(scan.nextInt()));
+    }
+
+    public static String intToBinary(int n) {
+        StringBuilder s = new StringBuilder();
+        while (n > 0) {
+            s.insert(0, ((n % 2) == 0 ? "0" : "1"));
+            n = n / 2;
+        }
+        return s.toString();
+    }
+}
