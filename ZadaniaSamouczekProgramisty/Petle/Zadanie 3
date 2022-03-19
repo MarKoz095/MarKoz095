@@ -1,0 +1,22 @@
+/* Napisz klasę ArrayFactory, która w konstruktorze pobierze liczbę całkowitą X. Klasa powinna mieć 2 metody:
+    int[] oneDimension – zwróci instancję tablicy jednowymiarowej o długości X,
+    int[][] twoDimension – zwróci instację tablicy dwuwymiarowej gdzie liczba wierszy i liczba kolumn równa się X,
+ */
+
+
+public class ArrayFactory {
+
+    private final int x;
+
+    public ArrayFactory(int x) {
+        this.x = x;
+    }
+
+    public int[] oneDimension(){
+        return new int[x];
+    }
+    public int[][] twoDimension(){
+        return new int[x][x];
+    }
+    
+}
