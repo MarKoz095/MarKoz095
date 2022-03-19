@@ -1,0 +1,20 @@
+/* Utwórz metodę, która pobierze liczbę i wypisze każdy znak w osobnej
+linii zaczynając od ostatniej cyfry (np. dla liczby 123 będą to trzy linie z 3, 2 i 1)
+. */
+
+public class Zadanie {
+
+    public static void main(String[] args) {
+        metoda(123);
+    }
+
+    public static void metoda (int a){
+        while (a>0){
+            int liczba = a % 10;
+            a/=10;
+            System.out.println(liczba);
+        }
+    }
+}
+
+
