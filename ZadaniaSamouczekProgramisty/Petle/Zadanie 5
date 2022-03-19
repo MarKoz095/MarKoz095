@@ -1,0 +1,16 @@
+/* Utwórz metodę, która jako argument pobierze obiekt klasy String i zwróci “odwrócony” argument. Na przykład “pies” przekształci w “seip”
+. */
+
+public class Zadanie {
+
+    public static void main(String[] args) {
+        System.out.println(metoda("pies"));
+    }
+
+    public static String metoda (String s){
+       return new StringBuilder(s).reverse().toString();
+    }
+}
+
+
+
