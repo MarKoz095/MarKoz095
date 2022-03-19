@@ -1,0 +1,15 @@
+/* Napisz metodę, która pobierze tablicę liczb całkowitych i wyświetli ją w postaci “[liczba] [liczba] [liczba]”,
+. */
+
+public class Zadanie {
+
+    public static void main(String[] args) {
+        tablica(new int[]{1, 2, 3});
+    }
+    public static void tablica(int[] tab) {
+        for(int i = 0; i<tab.length; i++)
+            System.out.print("[ " + tab[i]+" ]");
+    }
+}
+
+
