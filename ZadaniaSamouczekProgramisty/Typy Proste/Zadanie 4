@@ -1,0 +1,43 @@
+/* Napisz program, który pobierze od użytkownika łańcuch znaków i wyświetli na konsoli jego
+długość, informację czy jest to palindrom czy nie oraz jego odwróconą wartość.
+. */
+
+import java.util.Scanner;
+
+public class Zadanie {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Podaj łańcuch znaków: ");
+        System.out.println("Długość to: " + dlugosc(scanner.nextLine()));
+        System.out.println("Podaj łańcuch znaków: ");
+        System.out.println("Czy jest palindromem: " + palidrom(scanner.nextLine()));
+        System.out.println("Podaj łańcuch znaków: ");
+        System.out.println("Odwrocona wersja: " + reverseString(scanner.nextLine()));
+
+
+    }
+
+    public static int dlugosc (String s) {
+        return s.length();
+    }
+
+    static boolean palidrom(String s) {
+        int n = s.length();
+        for (int i = 0; i < (n / 2); ++i) {
+            if (s.charAt(i) != s.charAt(n - i - 1)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static String reverseString (String s){
+        return new StringBuilder(s).reverse().toString();
+    }
+
+}
+
+
