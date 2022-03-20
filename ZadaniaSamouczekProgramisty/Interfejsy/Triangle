@@ -1,0 +1,23 @@
+public class Triangle implements Figure{
+
+    private final double a; // bok a
+    private final double b; // bok b
+    private final double c; // przeciwprostokątna
+
+    public Triangle(double a, double b) {
+        this.a = a;
+        this.b = b;
+        this.c = Math.sqrt(a * a + b * b);
+    }
+
+    public double getPerimeter(){
+        return a + b + c;
+    }
+
+    public double getArea(){
+        return a * b / 2;
+    }
+    public String getType(){
+        return "Trójkąt";
+    }
+}
